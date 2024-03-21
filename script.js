@@ -71,6 +71,7 @@ gsap.from(card, {
 
 gsap.to(foguete, {
   y: -500,
+  x: 70,
   opacity: 0,
   duration: 2,
   scrollTrigger: {
