@@ -74,7 +74,6 @@ gsap.to(foguete, {
   opacity: 0,
   duration: 2,
   scrollTrigger: {
-    markers: true,
     trigger: sectionFoguete,
     start: 'center center',
     end: 'center top',
