@@ -57,17 +57,6 @@ const card = document.querySelectorAll('.card');
 const sectionFoguete = document.getElementById('resultado');
 const foguete = document.querySelector('.foguete')
 
-gsap.from(card, {
-  opacity: 0,
-  y: 500,
-  ease: "circ.out",
-  duration: 2,
-  scrollTrigger: {
-    trigger: sectionServices,
-    start: 'top center',
-    end: 'bottom top',
-  }
-}) 
 
 gsap.to(foguete, {
   y: -500,
@@ -81,3 +70,9 @@ gsap.to(foguete, {
     scrub: true,
   }
 })
+
+  AOS.init(
+    {
+      duration: 1200,
+    }
+  );

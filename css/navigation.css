@@ -227,8 +227,6 @@ body.menu-expanded .menu {
   color: var(--secondary-color);
 }
 
-
-
 .menu .button button {
   font-weight: 700;
   font-size: 1.8rem;
@@ -347,18 +345,33 @@ body.menu-expanded button path {
       
       box-shadow:  10px 10px 50px #292929a8,
            -10px -10px 50px #373737ad;
+
+      position: relative;
+    }
+
+    nav#navigation .menu a button::before {
+      content: '';
+      position: absolute;
+      height: 10rem;
+      width: 100%;
+      top: -10rem;
+      left: 0;
+      background: var(--primary-color);
+    }
+
+    nav#navigation .menu a button:hover::before {
+      box-shadow:  10px 10px 50px #94f10831,
+           -10px -10px 50px #9ae92328;
     }
 
     nav#navigation .menu a button:hover {
-      color: #000;
-      font-weight: 700;
       box-shadow:  10px 10px 50px #94f10831,
            -10px -10px 50px #9ae92328;
-
+      outline: none;
     }
 
     nav#navigation.scroll .menu a button {
-      background-color: #94f108c8;
+      opacity: .9;
     }
 
     nav#navigation .menu ul li:nth-child(6) {

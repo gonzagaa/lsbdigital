@@ -1,0 +1,172 @@
+#home {
+    background: var(--black-900);
+    height: 100vh;
+    overflow: hidden;
+  
+    position: relative;
+    z-index: 2;
+  
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  
+    overflow: hidden;
+  }
+  
+  #home .circle {
+    position: absolute;
+    bottom: 0;
+  
+    top: 620px;
+    z-index: 13;
+    transition: all 2s;
+  }
+  
+  #home.on .circle {
+    transform: translate(0, -600px);
+  }
+  
+  #home .blush {
+      width: 1000px;
+      height: 1000px;
+      background: radial-gradient(#3BFF00, transparent 50%);
+      border-radius: 50%;
+      position: absolute;
+      z-index: 10;
+      top: -35rem;
+      left: -50rem;
+      opacity: .05;
+  
+      animation: moveblush infinite 4s linear;
+  }
+  
+  #home .blush.dois {
+    background: radial-gradient(#3BFF00, transparent 50%);
+    top: initial;
+    left: initial;
+    bottom: -45rem;
+    right: -60rem;
+  }
+  
+  #home .eclipse {
+    animation: Rotation linear infinite 10s;
+    position: absolute;
+    opacity: .4;
+    bottom: -50rem;
+    left: -50rem;
+  }
+  
+  @keyframes Rotation {
+    0% {
+      transform: rotate(0);
+    }
+  
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+  
+  
+  #home .content {
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      flex-direction: column;
+  
+      text-align: left;
+    }
+  
+  #home .paises {
+    position: absolute;
+    left: 0;
+    animation: paises 300s linear infinite;
+    z-index: -1;
+    opacity: .5;
+  }
+  
+  @keyframes paises {
+    0% {
+      transform: translate(0, 0) rotate(0deg);
+    }
+    50% {
+      transform: translate(-2500px, 0) rotate(10deg);
+    }
+    100% {
+      transform: translate(0, 0) rotate(0deg);
+    }
+  }
+  
+  #home img.logo {
+    margin-bottom: 2rem;
+    width: 13rem;
+  }
+  
+  #home h1 {
+    color: var(--color-text);
+    font-weight: 200;
+    font-family: var(--RebondLight);
+    line-height: 1.3;
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  #home h1 span {
+    font-family: var(--RebondBold);
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+  }
+  
+  #home p {
+    font-family: var(--interV);
+  background: linear-gradient(to top, #5c5b5b 0%, #ffffff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 500;
+  opacity: .8;
+  font-size: 1.6rem;
+  }
+
+@media (min-width: 768px) {
+    .wrapper {
+        width: min(76rem, 100%);
+    } 
+}
+
+@media (min-width: 1080px) {
+    .wrapper {
+      width: min(112rem, 100%);
+    }
+
+    header#home .content {
+        text-align: center;
+        align-items: center;
+      }
+    
+      header#home .circle {
+        top: 820px;
+      }
+    
+      header#home .wrapper {
+        width: min(90rem, 100%);
+      }
+    
+      header#home .content img.logo {
+        margin-bottom: 3rem;
+      }
+      
+      header#home .content h1 {
+        font-size: 7rem;
+        line-height: 1;
+    
+        margin-bottom: 3rem;
+      }
+    
+      header#home .content p {
+        font-size: 2.5rem;
+      }
+}

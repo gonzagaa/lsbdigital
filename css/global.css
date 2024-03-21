@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: var(--Rebond);
+}
+
+@font-face {
+  font-family: 'Rebond';
+  src: url(../fonts/Rebond\ Grotesque.otf);
+}
+
+@font-face {
+  font-family: 'RebondBold';
+  src: url(../fonts/Rebond\ Grotesque\ Bold.otf);
+}
+
+@font-face {
+  font-family: 'RebondLight';
+  src: url(../fonts/Rebond\ Grotesque\ Light.otf);
+}
+
+@font-face {
+  font-family: 'InterV';
+  src: url(../fonts/Inter-V.ttf);
+}
+
+:root {
+    font-size: 62.5%;
+
+    --color-text: #d8d8d8;
+    --primary-color: #3BFF00;
+    --secondy-color: #98FF13;
+    --gradient: linear-gradient(45deg, #3BFF00 0%, #98FF13 100%);
+
+    --black-900: #020202;
+    --black-800: #090909;
+    --black-700: #0b0b0b;
+
+    --nav-height: 7.2rem;
+
+    --interV: 'interV';
+    --Rebond: 'Rebond';
+    --RebondBold: 'RebondBold';
+    --RebondLight: 'RebondLight';
+}  
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    font-family: var(--Rebond);
+  }
+  
+  ul {
+    list-style: none;
+  }
+
+  .wrapper {
+    width: min(50rem, 100%);
+    margin-inline: auto;
+  
+    padding-inline: 2.4rem;
+  }
+  
+  section {
+    padding-block: 10rem;
+  }
+
+  /* buttonWhatsapp =================== */
+#buttonWhatsapp {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 100;
+  
+    opacity: 0;
+    visibility: hidden;
+  
+    transform: translateY(100%);
+    transition: all 300ms ease-in-out;
+  }
+  
+  #buttonWhatsapp.show {
+    opacity: 1;
+    visibility: visible;
+  
+    transform: translateY(0);
+  }
+  
+  #buttonWhatsapp img {
+    width: 6rem;
+    transition: all 300ms ease-in-out;
+  }
+  
+  #buttonWhatsapp svg:hover {
+    transform: scale(1.1);
+  }

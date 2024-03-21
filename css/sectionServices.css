@@ -1,0 +1,128 @@
+#services {
+    background: var(--black-700);
+  }
+  
+  #services span {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.2rem;
+  
+    font-family: var(--interV);
+  
+    display: inline-block;
+    margin-bottom: 1rem;
+  }
+  
+  #services header {
+    position: relative;
+  }
+  
+  #services header::before {
+    content: '';
+    width: 100%;
+    position: absolute;
+    left: -23rem;
+    top: 16%;
+    height: 1px;
+    background: linear-gradient(45deg, #3BFF00 0%, #91ff0000 100%);
+  }
+  
+  #services h2 {
+    font-size: 3rem;
+    color: var(--color-text);
+    font-weight: 500;
+    margin-bottom: 5rem;
+  }
+  
+  #services .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  
+  #services .cards .card {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: start;
+  
+    padding: 2rem;
+    border-radius: 1.5rem 1.5rem 0 1.5rem;
+    background: var(--black-800);
+    box-shadow:  10px 10px 15px #090909,
+               -10px -10px 15px #0d0d0d;
+  
+    position: relative;
+  }
+  
+  #services .cards .card::before {
+    content: '';
+    position: absolute;
+  
+    width: 2px;
+    height: 40%;
+    right: -.1rem;
+    bottom: 0;
+    background: linear-gradient(45deg, #ffffff 0%, #91ff0000 100%);
+    opacity: .4;
+  }
+  
+  #services .cards .card::after {
+    content: '';
+    position: absolute;
+  
+    height: 2px;
+    width: 40%;
+    right: 0;
+    bottom: -.1rem;
+    background: linear-gradient(45deg, #91ff0000 0%, #ffffff 100%);
+    opacity: .4;
+  }
+  
+  #services .cards .card img {
+    margin-bottom: 2rem;
+    width: 5rem;
+  }
+  
+  #services .cards .card h3 {
+    font-family: var(--RebondBold);
+    font-size: 2.5rem;
+    color: var(--color-text);
+  
+    margin-bottom: 1rem;
+  }
+  
+  #services .cards .card p {
+    font-size: 1.6rem;
+    background: linear-gradient(45deg, #d4d4d4 0%, #7a7a7a 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  @media (min-width: 768px) {
+    .wrapper {
+        width: min(76rem, 100%);
+    } 
+}
+
+@media (min-width: 1080px) {
+    .wrapper {
+      width: min(112rem, 100%);
+    }
+
+    section#services .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    
+      section#services header::before {
+        display: none;
+      }
+    
+      section#services .cards .card::before,
+      section#services .cards .card::after {
+        opacity: .1;
+      }
+    
+}
