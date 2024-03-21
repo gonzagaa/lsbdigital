@@ -380,8 +380,11 @@ font-size: 1.6rem;
   width: 70%;
 }
 
-
-#resultado .image img.foguete {
+#resultado .image img.baseFoguete {
+  position: absolute;
+  left: 50%;
+  top: 48%;
+  transform: translate(-50%, -50%);
 }
 
 /* clientes =================== */
