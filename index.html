@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LSB Digital</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./navigation/navigation.css">
+
+    <script src="https://kit.fontawesome.com/40e1b7901b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <nav id="navigation" class="">
+
+        <div class="wrapper">
+
+            <a class="logo" href="#home">
+                <img  src="./assets/Logo LSB NOVA.svg" alt="Logo LSB Digital">
+            </a>
+            
+            <div class="menu">
+
+                <ul>
+                    <li><a onclick="closeMenu()" href="#home">Home</a></li>
+                    <li><a onclick="closeMenu()" href="#services">Serviços</a></li>
+                    <li><a onclick="closeMenu()" href="#clientes">Clientes</a></li>
+                    <li><a onclick="closeMenu()" href="#time">Time</a></li>
+                </ul>
+
+                <a onclick="closeMenu()" class="button" href="#contact"><button>
+                    Contato
+                </button></a>
+ 
+                 <ul class="social-links">
+                     <li>
+                         <a target="_blank" href="#">
+                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M17.73 6.27V1.5H16.73C14.7124 1.5132 12.782 2.32396 11.36 3.75531C9.93804 5.18665 9.13998 7.12238 9.14002 9.14V10.09H6.27002V13.91H9.14002V22.5H13.91V13.91H16.77V10.09H13.91V9.14C13.9087 8.76358 13.9817 8.3906 14.1248 8.04245C14.268 7.69431 14.4784 7.37784 14.7442 7.11121C15.0099 6.84457 15.3256 6.63301 15.6732 6.48866C16.0209 6.3443 16.3936 6.27 16.77 6.27H17.73Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+                                 </svg>
+                                 
+                         </a>
+                     </li>
+ 
+                     <li>
+                         <a target="_blank" href="#">
+                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <g clip-path="url(#clip0_273_69)">
+                                 <path d="M18.68 1.5H5.32C3.21027 1.5 1.5 3.21027 1.5 5.32V18.68C1.5 20.7897 3.21027 22.5 5.32 22.5H18.68C20.7897 22.5 22.5 20.7897 22.5 18.68V5.32C22.5 3.21027 20.7897 1.5 18.68 1.5Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+                                 <path d="M12 16.77C14.6344 16.77 16.77 14.6344 16.77 12C16.77 9.36558 14.6344 7.22998 12 7.22998C9.36558 7.22998 7.22998 9.36558 7.22998 12C7.22998 14.6344 9.36558 16.77 12 16.77Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+                                 <path d="M18.2 7.23012C18.9898 7.23012 19.63 6.58988 19.63 5.80012C19.63 5.01035 18.9898 4.37012 18.2 4.37012C17.4103 4.37012 16.77 5.01035 16.77 5.80012C16.77 6.58988 17.4103 7.23012 18.2 7.23012Z" fill="white"/>
+                                 </g>
+                                 <defs>
+                                 <clipPath id="clip0_273_69">
+                                 <rect width="24" height="24" fill="white"/>
+                                 </clipPath>
+                                 </defs>
+                                 </svg>
+                                 
+                         </a>
+                     </li>
+ 
+                     <li>
+                         <a target="_blank" href="#">
+                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M23 1H1V22.04H23V1Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+                                 <path d="M10.5701 18.2199V11.9999C10.5688 11.5604 10.6542 11.1251 10.8214 10.7187C10.9887 10.3123 11.2345 9.94291 11.5448 9.6317C11.8551 9.32049 12.2237 9.07357 12.6296 8.9051C13.0355 8.73662 13.4706 8.6499 13.9101 8.6499C14.7986 8.6499 15.6506 9.00285 16.2789 9.63109C16.9071 10.2593 17.2601 11.1114 17.2601 11.9999V18.2199" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+                                 <path d="M6.73999 7.68994V18.2199" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+                                 <path d="M10.5701 7.68994V12.4799" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+                                 </svg>
+                                 
+                         </a>
+                     </li>
+                 </ul>
+ 
+             </div>
+
+            <button 
+            aria-expanded="false"
+            aria-label="Abrir menu"
+            onclick="openMenu()" 
+            class="open-menu">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 20H30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10 12H30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M18 28L30 28" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg> 
+            </button>
+            <button
+            aria-expanded="true"
+            aria-label="Fechar menu"
+            onclick="closeMenu()" 
+            class="close-menu">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30 10L10 30M10 10L30 30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                        
+            </button>
+
+        </div>
+           
+    </nav>
+
+    <header class="header" id="home">
+        <div class="blush um"></div>
+        <div class="blush dois"></div>
+        <div class="eclipse"><img src="./assets/ECLIPSE VERDE.svg" alt=""></div>
+        
+        <img class="paises" src="./assets/PAISES (1).png" alt="">
+        
+        <div class="wrapper">
+           <div class="content">
+                <img class="logo" src="./assets/Logo LSB NOVA.svg" alt="">
+                <h1>Criamos estratégias que <span>alavancam sua visibilidade</span></h1>
+                <p>O sucesso online é essencial para as empresas atualmente, e o marketing digital é a chave para alcançá-lo.</p>
+           </div>
+        </div>
+
+        <img class="circle" src="./assets/Shape Divider.svg" alt="">
+    </header>
+
+    <section id="services">
+        <div class="wrapper">
+            <header>
+                <span>CONHEÇA</span>
+                <h2>Nossos serviços</h2>
+            </header>
+
+            <div class="cards">
+                <div class="card">
+                    <img src="./assets/icones/Seo VERMELHO.svg" alt="">
+                    <h3>Seo</h3>
+                    <p>Estratégias que te fazem alcançar o topo nas buscas.</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/icones/Tráfego AMARELO.svg" alt="">
+                    <h3>Tráfego</h3>
+                    <p>Investimento em anúncios que alcançam toda a internet</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/icones/Gerenciamento VERDE-AGUA.svg" alt="">
+                    <h3>Gerenciamento</h3>
+                    <p>Gerenciamos suas redes sociais para alcançar o sucesso.</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/icones/Landing Page AZUL.svg" alt="">
+                    <h3>Landing Page</h3>
+                    <p>Páginas profissionais que geram conversões pro seu negócio.</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/icones/Site institucional ROXO.svg" alt="">
+                    <h3>Site institucional</h3>
+                    <p>Sites profissionais que impulsionam a sua empresa.</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/icones/E-commerce ROSA.svg" alt="">
+                    <h3>E-commerce</h3>
+                    <p>Seu negócio expandido para o mundo digital.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="resultado">
+        <div class="wrapper">
+            <div class="content">
+                <div class="image">
+                    <img class="logo" src="./assets/Logo Linhas Branco.svg" alt="">
+                    <img class="foguete" src="./assets/foguetin lsb.png " alt="">
+                </div>
+
+                <div class="text">
+                    <span>Conecte-se com clientes em todo o mundo</span>
+                    <h2>Nosso foco é seu resultado!</h2>
+                    <p>Juntos, vamos transformar sua visão em realidade e elevar sua presença digital a novos patamares.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="clientes">
+        <img class="logoblur" src="./assets/LOGO BLUR.png" alt="">
+        <div class="wrapper">
+
+            <h2>Nossos clientes</h2>
+
+            <div class="logos">
+                <img class="r1" src="./assets/Clientes/Group 1.png" alt="">
+                <img class="eliar" src="./assets/Clientes/Group 2.png" alt="">
+                <img class="janyne" src="./assets/Clientes/Group 3.png" alt="">
+                <img class="boutique" src="./assets/Clientes/Group 4.png" alt="">
+                <img class="alfa" src="./assets/Clientes/Group 5.png" alt="">
+                <img class="segenergy" src="./assets/Clientes/Group 6.png" alt="">
+                <img class="agil" src="./assets/Clientes/Group 7.png" alt="">
+                <img class="sergio" src="./assets/Clientes/Group 9.png" alt="">
+                <img class="bomsucesso" src="./assets/Clientes/Group 10.png" alt="">
+                <img class="v" src="./assets/Clientes/Group 11.png" alt="">
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="clientes-mobile">
+        <div class="wrapper">
+            <header>
+                <h2>Nossos clientes</h2>
+            </header>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./assets/Clientes/Group 1.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/Clientes/Group 2.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/Clientes/Group 3.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/Clientes/Group 4.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/Clientes/Group 5.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/Clientes/Group 6.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/Clientes/Group 7.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/Clientes/Group 9.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/Clientes/Group 10.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/Clientes/Group 11.png" />
+                  </div>
+                </div>
+
+                    <svg class="swiper-button-prev" xmlns="http://www.w3.org/2000/svg" width="62" height="32" fill="#111111" viewBox="0 0 256 256"><path d="M165.66,202.34a8,8,0,0,1-11.32,11.32l-80-80a8,8,0,0,1,0-11.32l80-80a8,8,0,0,1,11.32,11.32L91.31,128Z"></path></svg>
+
+                    <svg class="swiper-button-next" xmlns="http://www.w3.org/2000/svg" width="62" height="32" fill="#111111" viewBox="0 0 256 256"><path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"></path></svg>
+        </div>
+    </section>
+
+    <section id="time">
+        <div class="wrapper">       
+            <h2>NOSSO TIME</h2>
+            <span>Conheça nossa equipe, aqueles que têm paixão por trabalhar e deixar nossos clientes mais confortáveis e felizes.</span>     
+            <div class="swiper mySwiperDesktop">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./assets/nosso time/matheus aquino.jpg" />
+                    <div class="content">
+                        <h3>Matheus Aquino</h3>
+                        <p>Diretor</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/nosso time/luca.jpg" />
+                    <div class="content">
+                        <h3>Luca Naves</h3>
+                        <p>Diretor Comercial</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/nosso time/mike.jpg" />
+                    <div class="content">
+                        <h3>Mike</h3>
+                        <p>Diretor de Design</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/nosso time/rafael reis.jpg" />
+                    <div class="content">
+                        <h3>Rafael Reis</h3>
+                        <p>Gestor de Tráfego</p>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img src="./assets/nosso time/gustavogonzaga.jpg" />
+                    <div class="content">
+                        <h3>Gustavo Gonzaga</h3>
+                        <p>Desenvolvedor Web</p>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img src="./assets/nosso time/Isabella Mendes.jpg" />
+                    <div class="content">
+                        <h3>Isabella Mendes</h3>
+                        <p>Editora de Vídeos/Captação de Fotos</p>
+                    </div>
+                  </div>
+                </div>
+
+                    <svg class="swiper-button-prev" xmlns="http://www.w3.org/2000/svg" width="62" height="32" fill="#95f108" viewBox="0 0 256 256"><path d="M165.66,202.34a8,8,0,0,1-11.32,11.32l-80-80a8,8,0,0,1,0-11.32l80-80a8,8,0,0,1,11.32,11.32L91.31,128Z"></path></svg>
+
+                    <svg class="swiper-button-next" xmlns="http://www.w3.org/2000/svg" width="62" height="32" fill="#95f108" viewBox="0 0 256 256"><path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"></path></svg>
+            </div>
+        </div> 
+    </section>
+
+    <section id="time-mobile">
+        <div class="wrapper">
+            <h2>NOSSO TIME</h2>
+            <span>Conheça nossa equipe, aqueles que têm paixão por trabalhar e deixar nossos clientes mais confortáveis e felizes.</span>     
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./assets/nosso time/matheus aquino.jpg" />
+                    <div class="content">
+                        <h3>Matheus Aquino</h3>
+                        <p>Diretor</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/nosso time/luca.jpg" />
+                    <div class="content">
+                        <h3>Luca Naves</h3>
+                        <p>Diretor Comercial</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/nosso time/mike.jpg" />
+                    <div class="content">
+                        <h3>Mike</h3>
+                        <p>Diretor de Design</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/nosso time/rafael reis.jpg" />
+                    <div class="content">
+                        <h3>Rafael Reis</h3>
+                        <p>Gestor de Tráfego</p>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img src="./assets/nosso time/gustavogonzaga.jpg" />
+                    <div class="content">
+                        <h3>Gustavo Gonzaga</h3>
+                        <p>Desenvolvedor Web</p>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img src="./assets/nosso time/Isabella Mendes.jpg" />
+                    <div class="content">
+                        <h3>Isabella Mendes</h3>
+                        <p>Editora de Vídeo/Captação de Fotos</p>
+                    </div>
+                  </div>
+                </div>
+
+                    <svg class="swiper-button-prev" xmlns="http://www.w3.org/2000/svg" width="62" height="32" fill="#95f108" viewBox="0 0 256 256"><path d="M165.66,202.34a8,8,0,0,1-11.32,11.32l-80-80a8,8,0,0,1,0-11.32l80-80a8,8,0,0,1,11.32,11.32L91.31,128Z"></path></svg>
+
+                    <svg class="swiper-button-next" xmlns="http://www.w3.org/2000/svg" width="62" height="32" fill="#95f108" viewBox="0 0 256 256"><path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"></path></svg>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="wrapper">
+            <header>
+                <h2>Entre em contato</h2>
+                <p>Preencha o formulário para falar com nosso time</p>
+            </header>
+
+            <form action="https://formsubmit.co/lsbagenciadigital@gmail.com" 
+            method="POST">
+                <input type="hidden" name="_next" value="https://www.instagram.com/lsbdigital/"/>
+                <input type="hidden" name="_autoresponse" value="Obrigado! Recebemos sua mensagem."/>
+
+                <label for="name">Nome</label>
+                <input name="name" type="text" required class="feedback-input"/>   
+
+                <label for="email">Email</label>
+                <input name="email" type="email" required class="feedback-input"/>
+
+                <label for="textarea">Deixe sua mensagem</label>
+                <textarea name="text" class="feedback-input"></textarea>
+
+                <div class="input">
+                    <button type="submit">ENVIAR</button>
+                </div>
+                
+              </form>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="wrapper">
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#95f108" viewBox="0 0 256 256"><path d="M240,98a57.63,57.63,0,0,1-17,41L133.7,229.62a8,8,0,0,1-11.4,0L33,139a58,58,0,0,1,82-82.1L128,69.05l13.09-12.19A58,58,0,0,1,240,98Z"></path></svg>
+
+            <div class="content">
+                <div class="image">
+                    <img src="./assets/logo LSB DIGITAL.png" alt="">
+                </div>
+
+                <div class="infos">
+                    <span>EMAIL</span>
+                    <p>lsbagenciadigital@gmail.com</p>
+
+                    <span>TELEFONE</span>
+                    <p>(62) 99213-6521</p>
+
+                    <span>ENDEREÇO</span>
+                    <p>Brookfield Towers Av. Dep. Jamel Cecílio, R. 56 - Sala - 815A - Jardim Goiás, Goiânia - GO</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="foot">
+            <p>Desenvolvido por <a href="https://www.instagram.com/lsbdigital/">LSB Digital</a></p>
+        </div>
+    </footer>
+
+    <a id="buttonWhatsapp" class="show" target="_blank" href="https://wa.link/g1ue82">
+
+        <img src="./assets/whatsapp logo.webp" alt="">
+
+    </a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html> 
