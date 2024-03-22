@@ -126,7 +126,7 @@
   }
 
   #resultado .result.comentarios {
-    top: 0;
+    top: -2rem;
     right: 0;
 
     animation-delay: 200ms;
@@ -140,7 +140,7 @@
   }
 
   #resultado .result.curtidas {
-    bottom: 0;
+    bottom: 1rem;
     right: 0;
 
     animation-delay: 400ms;
@@ -149,7 +149,7 @@
   #resultado .result p {
     color: var(--color-text);
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: var(--interV);
   }
 
