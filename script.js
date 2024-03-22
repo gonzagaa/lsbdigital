@@ -71,8 +71,37 @@ gsap.to(foguete, {
   }
 })
 
-  AOS.init(
-    {
-      duration: 1200,
-    }
-  );
+  AOS.init({
+    duration: 1200,
+  });
+
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 2,
+    loop: true,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+    keyboard: {
+      enabled: true,
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      1080: {
+        slidesPerView: 5,
+        spaceBetween: 40,
+      },
+    },
+  });

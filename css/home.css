@@ -173,3 +173,14 @@
       }
 }
 
+@media (min-width: 1400px) {
+  .wrapper {
+    width: min(140rem, 100%);
+  }
+}
+
+@media (min-width: 1700px) {
+  .wrapper {
+    width: min(150rem, 100%);
+  }
+}

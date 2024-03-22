@@ -98,6 +98,7 @@
     background: linear-gradient(45deg, #d4d4d4 0%, #7a7a7a 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-family: var(--interV);
   }
 
   @media (min-width: 768px) {
@@ -133,4 +134,16 @@
         font-size: 4rem;
         margin-bottom: 7rem;
       }
+}
+
+@media (min-width: 1400px) {
+  .wrapper {
+    width: min(140rem, 100%);
+  }
+}
+
+@media (min-width: 1700px) {
+  .wrapper {
+    width: min(150rem, 100%);
+  }
 }

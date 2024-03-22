@@ -310,7 +310,7 @@ body.menu-expanded button path {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      width: 63%;
+      width: 60%;
     }
   
     nav#navigation .menu ul:nth-child(1) {
@@ -429,10 +429,21 @@ body.menu-expanded button path {
     }
 
     .wrapper {
-      width: min(133rem, 100%);
+      width: min(112rem, 100%);
     }
-  
-  } 
+  }
+
+  @media (min-width: 1400px) {
+    .wrapper {
+      width: min(140rem, 100%);
+    }
+  }
+
+  @media (min-width: 1700px) {
+    .wrapper {
+      width: min(150rem, 100%);
+    }
+  }
 
 /* ANIMATIONS =================== */
 
