@@ -112,6 +112,9 @@
     mask-image: linear-gradient(180deg, rgba(0, 0, 0, 1), transparent 100%);
 
     animation: moveResults infinite 3s ease-in-out;
+
+    box-shadow:  14px 14px 28px #0a0a0a,
+             -14px -14px 28px #0c0c0c;
   }
 
   @keyframes moveResults {
