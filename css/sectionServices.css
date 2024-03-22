@@ -124,5 +124,13 @@
       section#services .cards .card::after {
         opacity: .1;
       }
-    
+
+      section#services span {
+        font-size: 1.4rem;
+      }
+
+      section#services header h2 {
+        font-size: 4rem;
+        margin-bottom: 7rem;
+      }
 }

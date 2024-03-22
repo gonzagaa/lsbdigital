@@ -67,6 +67,30 @@ html {
   
     padding-inline: 2.4rem;
   }
+
+  @media (min-width: 1080px) {
+    .wrapper {
+      width: min(112rem, 100%);
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .wrapper {
+      width: min(130rem, 100%);
+    }
+  }
+
+  @media (min-width: 1400px) {
+    .wrapper {
+      width: min(140rem, 100%);
+    }
+  }
+
+  @media (min-width: 1700px) {
+    .wrapper {
+      width: min(160rem, 100%);
+    }
+  }
   
   section {
     padding-block: 10rem;
