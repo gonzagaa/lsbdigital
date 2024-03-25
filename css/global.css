@@ -56,10 +56,46 @@ html {
     height: 100%;
     font-family: var(--Rebond);
   }
-  
+
+  body {
+    cursor: none;
+  }
+
+  .cursor-dot {
+    width: 5px;
+    height: 5px;
+    background: var(--gradient);
+  }
+
+  .cursor-outline {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #3cff007a;
+  }
+
+  .cursor-dot,
+  .cursor-outline {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 150;
+    pointer-events: none;
+  }
+
+  button {
+    cursor: url("../assets/CURSOR\ LSB.svg"), auto;
+  }
+
   ul {
     list-style: none;
   }
+
+  ::selection {
+  color: #000000;
+  background: #d8d8d8;
+}
 
   .wrapper {
     width: min(50rem, 100%);

@@ -1,0 +1,162 @@
+:root {
+    font-size: 62.5%;
+
+    --color-text: #d8d8d8;
+    --primary-color: #3BFF00;
+    --secondy-color: #98FF13;
+    --gradient: linear-gradient(45deg, #3BFF00 0%, #98FF13 100%);
+
+    --black-900: #020202;
+    --black-800: #090909;
+    --black-700: #0b0b0b;
+
+    --nav-height: 7.2rem;
+
+    --interV: 'interV';
+    --Rebond: 'Rebond';
+    --RebondBold: 'RebondBold';
+    --RebondLight: 'RebondLight';
+}  
+
+#clientes {
+    background: var(--black-700);
+    overflow: hidden;
+  }
+
+#clientes h2 {
+    font-size: 3rem;
+    color: var(--color-text);
+    font-weight: 500;
+    margin-bottom: 5rem;
+}
+
+#clientes header span {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.2rem;
+  
+    font-family: var(--interV);
+  
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+#clientes header {
+    position: relative;
+  }
+  
+#clientes header::before {
+    content: '';
+    width: 100%;
+    position: absolute;
+    right: -23rem;
+    top: 16%;
+    height: 1px;
+    background: linear-gradient(45deg, #91ff0000 0%, #3BFF00 100%);
+}
+
+@keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+  
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  #clientes .slide {
+    overflow: hidden;
+    padding: 2rem 0;
+    background: var(--black-700);
+    display: flex;
+    white-space: nowrap;
+  
+    position: relative;
+  }
+  
+  #clientes .slide:before,
+  #clientes .slide:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 3rem;
+    height: 100%;
+    z-index: 2;
+  }
+  
+  #clientes .slide:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), #0b0b0b);
+  }
+  
+  #clientes .slide:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #0b0b0b);
+  }
+  
+  #clientes .slide-text {
+    animation: slide 25s infinite linear;
+    display: flex;
+  }
+
+  #clientes .slide.dois .slide-text {
+    animation: slide 22s infinite linear;
+  }
+  
+  #clientes .slide-text img {
+    width: 10rem;
+    margin: 0 2rem;
+    opacity: .7;
+    position: relative;
+    filter: brightness(0) invert(100%);
+    opacity: .4;
+
+    transition: all 200ms ease-in-out;
+  }
+
+  #clientes .slide-text img:hover {
+    filter: initial;
+    transform: scale(1.1);
+    opacity: 1;
+  }
+
+  @media (min-width: 768px) {
+    .wrapper {
+        width: min(76rem, 100%);
+    } 
+
+    section#clientes header::before {
+        display: none;
+    }
+}
+
+@media (min-width: 1080px) {
+    .wrapper {
+      width: min(112rem, 100%);
+    }
+
+    section#clientes .wrapper {
+        width: 100%;
+        padding-inline: 0;
+    }
+    
+
+    section#clientes header span {
+        font-size: 1.4rem;
+    }
+
+    section#clientes header h2 {
+        font-size: 4rem;
+    }
+
+    section#clientes .slide:before,
+    section#clientes .slide:after {
+        width: 25rem;
+    }
+
+    section#clientes .slide-text img {
+        width: 15rem;
+    }
+}

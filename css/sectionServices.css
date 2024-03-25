@@ -99,12 +99,17 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: var(--interV);
+    font-weight: 500;
   }
 
   @media (min-width: 768px) {
     .wrapper {
         width: min(76rem, 100%);
     } 
+
+    section#services header::before {
+      display: none;
+    }
 }
 
 @media (min-width: 1080px) {
@@ -115,10 +120,6 @@
     section#services .cards {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-      }
-    
-      section#services header::before {
-        display: none;
       }
     
       section#services .cards .card::before,

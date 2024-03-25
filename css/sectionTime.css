@@ -141,15 +141,15 @@
     .wrapper {
         width: min(76rem, 100%);
     } 
+
+    section#time header::before {
+        display: none;
+    }
 }
 
 @media (min-width: 1080px) {
     .wrapper {
       width: min(112rem, 100%);
-    }
-    
-    section#time header::before {
-        display: none;
     }
 
     section#time span {
@@ -193,7 +193,7 @@
       
     section#time .wrapper svg:hover {
         transform: scale(2.7);
-        cursor: pointer;
+        cursor: url("../assets/CURSOR\ LSB.svg"), auto;
     }
 }
 

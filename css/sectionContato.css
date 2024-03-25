@@ -48,6 +48,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: var(--interV);
+    font-weight: 500;
   }
 
   #contato .text a button {
@@ -58,15 +59,15 @@
     border-radius: 1rem;
     font-weight: 700;
     background: var(--gradient);
-
+    color: #000;
     transition: all 200ms ease-in-out;
   }
 
   #contato .text a button:hover {
     background-position-x: 1rem;
     box-shadow: 2px 2px 10px #1a4100;
-    cursor: pointer;
     filter: brightness(.8);
+    cursor: url("../assets/CURSOR\ LSB.svg"), auto;
   }
 
   #contato .image {
@@ -97,15 +98,15 @@
     .wrapper {
         width: min(76rem, 100%);
     } 
+
+    section#contato header::before {
+      display: none;
+  }
 }
 
 @media (min-width: 1080px) {
     .wrapper {
       width: min(112rem, 100%);
-    }
-    
-    section#contato header::before {
-        display: none;
     }
 
     section#contato span {

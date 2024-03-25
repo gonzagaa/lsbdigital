@@ -122,7 +122,6 @@ nav .logo img {
 nav button {
   background: none;
   border: none;
-  cursor: pointer;
 }
 
 nav button:hover {
