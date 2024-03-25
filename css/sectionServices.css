@@ -108,8 +108,8 @@
     } 
 
     section#services header::before {
-      display: none;
-    }
+        display: none;
+      };
 }
 
 @media (min-width: 1080px) {

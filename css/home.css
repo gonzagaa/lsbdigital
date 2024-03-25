@@ -84,9 +84,9 @@
   #home .paises {
     position: absolute;
     left: 0;
-    animation: paises 300s linear infinite;
+    animation: paises 150s linear infinite;
     z-index: -1;
-    opacity: .5;
+    opacity: .6;
   }
   
   @keyframes paises {
