@@ -180,13 +180,13 @@
   #resultado .image img.foguete {
     filter: drop-shadow(-5px 5px 30px #33d90077);
   }
-  
-  #resultado .image img.baseFoguete {
+
+  #resultado .image img.explosao {
     position: absolute;
     left: 50%;
-    top: 48%;
+    top: 52%;
     transform: translate(-50%, -50%);
-    filter: drop-shadow(-5px 5px 30px #33d9002f);
+    filter: drop-shadow(-5px 5px 30px #33d90013);
   }
 
   @media (min-width: 768px) {

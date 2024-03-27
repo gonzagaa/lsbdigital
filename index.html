@@ -15,7 +15,6 @@
 <body>
     
     <nav id="navigation" class="">
-
         <div class="wrapper">
 
             <a class="logo" href="#home">
@@ -27,11 +26,11 @@
                 <ul>
                     <li><a onclick="closeMenu()" href="#home">Home</a></li>
                     <li><a onclick="closeMenu()" href="#services">Serviços</a></li>
-                    <li><a onclick="closeMenu()" href="#clientes">Clientes</a></li>
                     <li><a onclick="closeMenu()" href="#time">Time</a></li>
+                    <li><a onclick="closeMenu()" href="#clientes">Clientes</a></li>
                 </ul>
 
-                <a  onclick="closeMenu()" class="button" href="#contact"><button>
+                <a  onclick="closeMenu()" class="button" href="#contato"><button>
                     Contato
                 </button></a>
  
@@ -99,8 +98,7 @@
                     </svg>                        
             </button>
 
-        </div>
-           
+        </div>       
     </nav>
 
     <header class="header" id="home">
@@ -175,7 +173,7 @@
                 <div class="image">
                     <img class="logo" src="./assets/Logo Linhas Branco.svg" alt="">
                     <img class="foguete" src="./assets/foguete lsb com fogo amarelo.png" alt="">
-                    <img class="baseFoguete" src="./assets/base foguete amarela.png" alt="">
+                    <img class="explosao" src="./assets/explosão foguete.png" alt="">
 
                     <div class="result turbinada">
                         <img src="./assets/icones/icone turbinada.png" alt="">
@@ -274,7 +272,6 @@
                 <div class="slide um">
                     <div class="slide-text">
                         <img src="./assets/ClientesColorido/agil.webp" alt="">
-                        <img src="./assets/ClientesColorido/alfa.webp" alt="">
                         <img src="./assets/ClientesColorido/bw boutique.webp" alt="">
                         <img src="./assets/ClientesColorido/eliar.webp" alt="">
                         <img src="./assets/ClientesColorido/furtado e resende.webp" alt="">
@@ -286,7 +283,6 @@
                     </div>
                     <div class="slide-text">
                         <img src="./assets/ClientesColorido/agil.webp" alt="">
-                        <img src="./assets/ClientesColorido/alfa.webp" alt="">
                         <img src="./assets/ClientesColorido/bw boutique.webp" alt="">
                         <img src="./assets/ClientesColorido/eliar.webp" alt="">
                         <img src="./assets/ClientesColorido/furtado e resende.webp" alt="">
@@ -299,7 +295,6 @@
                 </div>
                 <div class="slide dois">
                     <div class="slide-text">
-                        <img src="./assets/ClientesColorido/alfa.webp" alt="">
                         <img src="./assets/ClientesColorido/vaultch.webp" alt="">
                         <img src="./assets/ClientesColorido/MB CAPITAL.webp" alt="">
                         <img src="./assets/ClientesColorido/sergioaidar.webp" alt="">
@@ -311,7 +306,6 @@
                         <img src="./assets/ClientesColorido/janyne de sa.webp" alt="">
                     </div>
                     <div class="slide-text">
-                        <img src="./assets/ClientesColorido/alfa.webp" alt="">
                         <img src="./assets/ClientesColorido/vaultch.webp" alt="">
                         <img src="./assets/ClientesColorido/MB CAPITAL.webp" alt="">
                         <img src="./assets/ClientesColorido/sergioaidar.webp" alt="">
@@ -340,7 +334,7 @@
                         <p>Se você está pronto para se alavancar no mundo digital, fale com nosso time hoje mesmo. 
                         Seja o líder do seu setor e vamos juntos construir a presença online que você merece.</p>
     
-                        <a href="#">
+                        <a target="_blank" href="https://wa.link/ge6c2z">
                             <button>
                                 ENTRAR EM CONTATO
                             </button>
@@ -355,17 +349,47 @@
         </div>
     </section>
 
-    <section>
-        
-    </section>
+    <footer id="footer">
+        <div class="wrapper">
+            <div class="content">
+                <img class="logo" src="./assets/Logo LSB NOVA.svg" alt="">
 
-    <a id="buttonWhatsapp" class="show" target="_blank" href="https://wa.link/g1ue82">
+                <div class="navigation">
+                    <h3>Navegação</h3>
+                    <p><a href="#home">Home</a></p>
+                    <p><a href="#services">Serviços</a></p>
+                    <p><a href="#time">Time</a></p>
+                    <p><a href="#clientes">Clientes</a></p>
+                    <p><a href="#contato">Contato</a></p>
+                </div>
+    
+                <div class="contato">
+                    <h3>Conecte-se conosco</h3>
+                    <p>Brookfield Towers Av. Dep. Jamel Cecílio, R. 56 - Sala - 815A - Jardim Goiás, Goiânia - GO</p>
+                    <p>lsbagenciadigital@gmail.com</p>
+                    <p><a target="_blank" href="tel:+55-62-99213-6521">(62) 99213-6521</a></p>
+                </div>
+    
+                <div class="redes-sociais">
+                    <h3>Social</h3>
+                    <div class="icons">
+                        <a target="_blank" href="https://wa.link/ge6c2z"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                        <a target="_blank" href="https://www.instagram.com/lsbdigital/"><ion-icon name="logo-instagram"></ion-icon></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a id="buttonWhatsapp" class="show" target="_blank" href="https://wa.link/ge6c2z">
         <img src="./assets/whatsapp logo.webp" alt="">
     </a>
 
     <div class="cursor-dot" data-cursor-dot></div>
     <div class="cursor-outline" data-cursor-outline></div>
 
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

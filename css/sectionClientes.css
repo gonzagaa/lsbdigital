@@ -53,7 +53,7 @@
     right: -23rem;
     top: 16%;
     height: 1px;
-    background: linear-gradient(45deg, #91ff0000 0%, #3BFF00 100%);
+    background: linear-gradient(45deg, #91ff0000 0%, #3BFF00 100%); 
 }
 
 @keyframes slide {
@@ -63,6 +63,16 @@
   
     to {
       transform: translateX(-100%);
+    }
+  }
+
+  @keyframes slideDois {
+    from {
+      transform: translateX(-100%);
+    }
+  
+    to {
+      transform: translateX(0);
     }
   }
   
@@ -102,7 +112,7 @@
   }
 
   #clientes .slide.dois .slide-text {
-    animation: slide 22s infinite linear;
+    animation: slideDois 25s infinite linear;
   }
   
   #clientes .slide-text img {

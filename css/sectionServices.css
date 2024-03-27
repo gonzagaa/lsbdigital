@@ -1,5 +1,9 @@
 #services {
     background: var(--black-700);
+
+    position: sticky;
+    top: 0;
+    z-index: -1;
   }
   
   #services span {

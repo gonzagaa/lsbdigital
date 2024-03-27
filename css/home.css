@@ -9,8 +9,6 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-  
-    overflow: hidden;
 
     transition: all 200ms ease-in-out;
   }
