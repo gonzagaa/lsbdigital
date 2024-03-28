@@ -55,12 +55,12 @@ html {
     width: 100%;
     height: 100%;
     font-family: var(--Rebond);
-  text-align: center;
-
+    text-align: center;
   }
 
   body {
     cursor: none;
+    background-color: var(--black-900);
   }
 
   .cursor-dot {
