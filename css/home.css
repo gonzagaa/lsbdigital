@@ -16,7 +16,6 @@
   #home .circle {
     position: absolute;
     bottom: 0;
-  
     top: 620px;
     z-index: 13;
     transition: all 2s;
@@ -149,6 +148,7 @@
     
       header#home .circle {
         top: 820px;
+        width: 100%;
       }
     
       header#home .wrapper {
@@ -180,5 +180,11 @@
 @media (min-width: 1700px) {
   .wrapper {
     width: min(150rem, 100%);
+  }
+}
+
+@media (min-width: 2000px) {
+  header#home .circle {
+    top: 1080px;
   }
 }

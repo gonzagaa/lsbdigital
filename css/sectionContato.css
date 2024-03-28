@@ -4,18 +4,6 @@
     position: relative;
 }
 
-#contato::before {
-  content: '';
-  position: absolute;
-  width: 80%;
-  height: 1px;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%);
-  background: linear-gradient(to right, #3cff0000, #3BFF00, #3cff0000);
-  box-shadow: 2px 2px 20px #3BFF00;
-}
-
 #contato header span {
     background: var(--gradient);
     -webkit-background-clip: text;
@@ -31,16 +19,6 @@
   #contato header {
     position: relative;
     text-align: left;
-  }
-  
-  #contato header::before {
-    content: '';
-    width: 100%;
-    position: absolute;
-    right: -13rem;
-    top: .8rem;
-    height: 1px;
-    background: linear-gradient(45deg, #91ff0000 0%, #3BFF00 100%);
   }
   
   #contato h2 {
@@ -110,10 +88,6 @@
     .wrapper {
         width: min(76rem, 100%);
     } 
-
-    section#contato header::before {
-      display: none;
-  }
 }
 
 @media (min-width: 1080px) {

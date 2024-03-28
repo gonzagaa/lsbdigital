@@ -65,16 +65,6 @@
     position: relative;
   }
   
-  #resultado span::before {
-    content: '';
-    width: 100%;
-    position: absolute;
-    right: -27rem;
-    top: .8rem;
-    height: 1px;
-    background: linear-gradient(45deg, #91ff0000 0%, #3BFF00 100%);
-  }
-  
   #resultado h2 {
     font-size: 3rem;
     color: var(--color-text);
@@ -193,10 +183,6 @@
     .wrapper {
         width: min(76rem, 100%);
     } 
-
-    section#resultado span::before {
-      display: none;
-    }
 }
 
 @media (min-width: 1080px) {

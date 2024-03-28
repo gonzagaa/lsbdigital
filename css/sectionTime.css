@@ -40,16 +40,6 @@
 #time header {
     position: relative;
   }
-  
-#time header::before {
-    content: '';
-    width: 100%;
-    position: absolute;
-    left: -23rem;
-    top: 16%;
-    height: 1px;
-    background: linear-gradient(45deg, #3BFF00 0%, #91ff0000 100%);
-}
 
 #time .carrossel {
     margin-bottom: 5rem;
@@ -129,10 +119,6 @@
     .wrapper {
         width: min(76rem, 100%);
     } 
-
-    section#time header::before {
-        display: none;
-    }
 }
 
 @media (min-width: 1080px) {

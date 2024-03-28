@@ -21,17 +21,7 @@
   #services header {
     position: relative;
   }
-  
-  #services header::before {
-    content: '';
-    width: 100%;
-    position: absolute;
-    left: -23rem;
-    top: 16%;
-    height: 1px;
-    background: linear-gradient(45deg, #3BFF00 0%, #91ff0000 100%);
-  }
-  
+    
   #services h2 {
     font-size: 3rem;
     color: var(--color-text);
@@ -110,10 +100,6 @@
     .wrapper {
         width: min(76rem, 100%);
     } 
-
-    section#services header::before {
-        display: none;
-      };
 }
 
 @media (min-width: 1080px) {

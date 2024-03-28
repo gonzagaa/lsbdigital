@@ -42,19 +42,6 @@
     margin-bottom: 1rem;
 }
 
-#clientes header {
-    position: relative;
-  }
-  
-#clientes header::before {
-    content: '';
-    width: 100%;
-    position: absolute;
-    right: -23rem;
-    top: 16%;
-    height: 1px;
-    background: linear-gradient(45deg, #91ff0000 0%, #3BFF00 100%); 
-}
 
 @keyframes slide {
     from {
@@ -136,10 +123,6 @@
     .wrapper {
         width: min(76rem, 100%);
     } 
-
-    section#clientes header::before {
-        display: none;
-    }
 }
 
 @media (min-width: 1080px) {
