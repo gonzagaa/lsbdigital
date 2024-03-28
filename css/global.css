@@ -137,6 +137,18 @@ html {
     padding-block: 10rem;
   }
 
+  /*====  scrollbar ============================ */
+::-webkit-scrollbar {
+  width: .6rem;
+  background-color: #0f0f0f;
+}
+
+::-webkit-scrollbar-thumb {
+  width: .6rem;
+  background: var(--gradient);
+  border-radius: 1rem;
+}
+
   /* buttonWhatsapp =================== */
 #buttonWhatsapp {
     position: fixed;

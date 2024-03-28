@@ -27,16 +27,6 @@
   --RebondLight: 'RebondLight';
 }  
 
-/*====  scrollbar ============================ */
-::-webkit-scrollbar {
-  width: 1rem;
-  background-color: #0f0f0f;
-}
-
-::-webkit-scrollbar-thumb {
-  width: 1rem;
-  background-color: #ffffff97;
-}
 /* NAVIGATION =================== */
 
 nav {
