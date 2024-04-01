@@ -16,6 +16,16 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - Git e Github
 - Figma
 
+- ## 📚 Libs
+
+Nesse projeto, foram utilizadas as seguintes bibliotecas (libs):
+
+- GSAP
+- ScrollTriger
+- AOS Animation
+- IonIcons
+- SwiperJS
+
 Feito com ♥ by Gustavo Gonzaga Dev. :wave: 
 
 <br/>
