@@ -1,4 +1,4 @@
-<h1 align="center"> Site animado e responsivo </h1>
+<h1 align="center"> Website institucional, animado e responsivo.</h1>
 <p align="center"> LSB Digital - Agência de Marketing </p>
 
 <br>
