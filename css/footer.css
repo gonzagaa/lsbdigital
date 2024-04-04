@@ -3,7 +3,7 @@ footer {
     overflow: hidden;
     position: relative;
 
-    padding: 8rem;
+    padding-block: 8rem;
 }
 
 footer::before {

@@ -7,8 +7,11 @@
 
 #author .content {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
+    text-align: start;
+    gap: 2rem;
 }
 
 #author .content p {
@@ -35,4 +38,16 @@
 
 #author .content img {
     width: 3rem;
+}
+
+@media (min-width: 1080px) {
+    .wrapper {
+        width: min(112rem, 100%);
+      }
+
+    #author .wrapper .content {
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+    }
 }
