@@ -1,4 +1,4 @@
-<h1 align="center"> Site animado e responsivo </h1>
+<h1 align="center"> Website institucional, animado e responsivo.</h1>
 <p align="center"> LSB Digital - Agência de Marketing </p>
 
 <br>
@@ -15,6 +15,16 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - JavaScript
 - Git e Github
 - Figma
+
+## 📚 Libs
+
+Nesse projeto, foram utilizadas as seguintes bibliotecas (libs):
+
+- GSAP
+- ScrollTriger
+- AOS Animation
+- IonIcons
+- SwiperJS
 
 Feito com ♥ by Gustavo Gonzaga Dev. :wave: 
 
