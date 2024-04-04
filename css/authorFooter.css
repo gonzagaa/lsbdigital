@@ -1,0 +1,38 @@
+
+#author {
+    background: #000;
+    width: 100%;
+    padding: 2rem;
+}
+
+#author .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#author .content p {
+    color: #9b9b9b;
+    font-size: 1.6rem;
+}
+
+#author .content a {
+    text-decoration: none;
+}
+
+#author .content a:hover p.author {
+    color: #fff;
+    cursor: pointer;
+}
+
+#author .content p.author {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+
+    transition: all 200ms ease-in-out;
+}
+
+#author .content img {
+    width: 3rem;
+}

@@ -1,22 +1,3 @@
-:root {
-    font-size: 62.5%;
-
-    --color-text: #d8d8d8;
-    --primary-color: #3BFF00;
-    --secondy-color: #98FF13;
-    --gradient: linear-gradient(45deg, #3BFF00 0%, #98FF13 100%);
-
-    --black-900: #020202;
-    --black-800: #090909;
-    --black-700: #0b0b0b;
-
-    --nav-height: 7.2rem;
-
-    --interV: 'interV';
-    --Rebond: 'Rebond';
-    --RebondBold: 'RebondBold';
-    --RebondLight: 'RebondLight';
-} 
 
 #time {
     background: var(--black-700);

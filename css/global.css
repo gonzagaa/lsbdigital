@@ -56,7 +56,6 @@ html {
     height: 100%;
     font-family: var(--Rebond);
     text-align: center;
-
     background-color: var(--black-900);
 
   }
@@ -124,6 +123,10 @@ html {
   @media (min-width: 1400px) {
     .wrapper {
       width: min(150rem, 100%);
+    }
+
+    :root {
+      font-size: 65%;
     }
   }
 
