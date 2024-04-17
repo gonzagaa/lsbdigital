@@ -1,0 +1,130 @@
+#significado {
+    background: var(--black-700);
+    background: linear-gradient(145deg, #0e0e0e, #0a0a0a);
+
+    position: relative;
+    overflow: hidden;
+}
+
+#significado img.logo {
+    position: absolute;
+    width: 5rem;
+    top: -3rem;
+    right: 3rem;
+    opacity: .1;
+    filter: blur(2px);
+}
+
+#significado .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+}
+
+#significado .cards .card {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+#significado .cards .card img {
+    width: 10rem;
+}
+
+#significado .cards .card .icon {
+    position: relative;
+}
+
+#significado .cards .card .icon::before {
+    content: '';
+    position: absolute;
+    width: 12rem;
+    height: 12rem;
+    border-top: 3px solid var(--primary-color);
+    border-left: 3px solid var(--black-700);
+    border-right: 3px solid var(--black-700);
+    border-bottom: 3px solid var(--black-700);
+    border-radius: 50%;
+    top: -4rem;
+    left: -.8rem;
+    animation: rotateBorder infinite linear 15s;
+}
+
+@keyframes rotateBorder {
+    0% {
+        transform: rotate(0) ;
+    }
+
+    100% {
+        transform: rotate(360deg) ;
+    }
+}
+
+#significado .cards .card h3 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+#significado .cards .card h3 span {
+    background: linear-gradient(45deg, #d4d4d4 0%, #7a7a7a 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media (min-width: 768px) {
+    .wrapper {
+        width: min(76rem, 100%);
+    } 
+}
+
+@media (min-width: 1080px) {
+    .wrapper {
+      width: min(112rem, 100%);
+    }
+
+    section#significado .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    section#significado img.logo.um {
+        width: 10rem;
+        filter: blur(4px);
+        opacity: .04;
+    }
+
+    section#significado img.logo.dois {
+        width: 6rem;
+        left: 10rem;
+    }
+
+    section#significado .cards .card {
+        justify-content: center;
+        gap: 6rem;
+    }
+
+    section#significado .cards .card img {
+        width: 12rem;
+    }
+
+    section#significado .cards .card .icon::before {
+        width: 18rem;
+        height: 18rem;
+
+        top: -6.5rem;
+        left: -3.5rem;
+    }
+}
+
+@media (min-width: 1400px) {
+  .wrapper {
+    width: min(140rem, 100%);
+  }
+}
+
+@media (min-width: 1700px) {
+  .wrapper {
+    width: min(150rem, 100%);
+  }
+}

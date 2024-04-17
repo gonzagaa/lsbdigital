@@ -4,6 +4,20 @@
     position: relative;
 }
 
+#contato .blush {
+  width: 1500px;
+  height: 1500px;
+  background: radial-gradient(#ffffff, transparent 50%);
+  border-radius: 50%;
+  position: absolute;
+  z-index: 10;
+  bottom: -80rem;
+  left: -80rem;
+  opacity: .07;
+
+  animation: moveblush infinite 4s linear;
+}
+
 #contato header span {
     background: var(--gradient);
     -webkit-background-clip: text;
@@ -39,14 +53,59 @@
     -webkit-text-fill-color: transparent;
     font-family: var(--interV);
     font-weight: 500;
+
+    margin-bottom: 1.5rem;
+  }
+
+  #contato .results {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  #contato .result {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    gap: .4rem;
+    align-items: center;
+
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(45, 45, 45, 0.541);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.041);
+    padding: 1rem;
+    width: max-content;
+    opacity: .9;
+
+    mask-image: linear-gradient(180deg, rgba(0, 0, 0, 1), transparent 100%);
+
+
+    box-shadow:  14px 14px 28px #0a0a0a,
+             -14px -14px 28px #0c0c0c;
+  }
+
+  #contato .result p {
+    color: var(--color-text);
+    font-weight: 600;
+    font-size: 1rem;
+    font-family: var(--interV);
+  }
+
+  #contato .result img {
+    margin-top: -1rem;
+  }
+
+  #contato .result p span {
+    font-weight: 800;
   }
 
   #contato .text a button {
     margin-top: 2rem;
-    padding: 1.5rem 2rem;
+    padding: 1.3rem 3rem;
     font-size: 1.6rem;
     border: none;
-    border-radius: 1rem;
+    border-radius: 2rem;
     font-weight: 700;
     background: var(--gradient);
     color: #000;
@@ -56,7 +115,13 @@
   #contato .text a button:hover {
     background-position-x: 1rem;
     box-shadow: 2px 2px 10px #1a4100;
-    filter: brightness(.8);
+
+    background: transparent;
+    outline: 1px solid var(--primary-color);
+    color: var(--color-text);
+    font-weight: 300;
+    opacity: .8;
+
     cursor: url("../assets/CURSOR\ LSB.svg"), auto;
   }
 
@@ -111,15 +176,21 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: center;
+        grid-template-areas: "A B";
     }
 
     section#contato .content .image img {
         width: 80%;
     }
 
+    section#contato .result p {
+      font-size: 1.2rem;
+    }
+
     section#contato .content .image {
         display: flex;
-        justify-content: end;
+        justify-content: start;
+        grid-area: A;
     }
 }
 
