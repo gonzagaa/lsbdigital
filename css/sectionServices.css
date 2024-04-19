@@ -61,11 +61,10 @@
     border-radius: 50%;
     position: absolute;
     z-index: 2;
-    bottom: 0;
-    left: 60%;
-    opacity: .5;
-
-    animation: moveblush infinite 4s linear;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
 }
   
   #services .cards .card::before {
