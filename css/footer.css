@@ -88,11 +88,19 @@ footer .redes-sociais ion-icon {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         align-content: center;
+        justify-items: center;
         gap: 15rem;
     }
 
     footer#footer .wrapper div {
         gap: 1rem;
+    }
+
+    footer#footer .wrapper div.redes-sociais {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        text-align: end;
     }
 
     footer#footer a {

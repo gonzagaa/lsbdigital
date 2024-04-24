@@ -130,6 +130,15 @@
   font-size: 1.6rem;
   }
 
+  #home ion-icon {
+    margin-top: 3rem;
+    color: var(--black-900);
+    background: var(--gradient);
+    padding: 2rem 1rem;
+    border-radius: 5rem;
+    font-size: 3rem;
+  }
+
 @media (min-width: 768px) {
     .wrapper {
         width: min(76rem, 100%);
@@ -168,6 +177,10 @@
     
       header#home .content p {
         font-size: 2.5rem;
+      }
+
+      header#home .content ion-icon {
+        font-size: 2rem;
       }
 }
 

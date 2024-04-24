@@ -100,6 +100,10 @@
     font-weight: 800;
   }
 
+  #contato .text a {
+    text-decoration: none;
+  }
+
   #contato .text a button {
     margin-top: 2rem;
     padding: 1.3rem 3rem;
@@ -110,6 +114,10 @@
     background: var(--gradient);
     color: #000;
     transition: all 200ms ease-in-out;
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
   }
 
   #contato .text a button:hover {
@@ -118,8 +126,7 @@
 
     background: transparent;
     outline: 1px solid var(--primary-color);
-    color: var(--color-text);
-    font-weight: 300;
+    color: var(--primary-color);
     opacity: .8;
 
     cursor: url("../assets/CURSOR\ LSB.svg"), auto;

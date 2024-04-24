@@ -58,7 +58,7 @@ window.addEventListener('scroll', () => {
   const larguraDaTela = window.innerWidth
 
   if (larguraDaTela < 768) {
-    if (alturaScrollY < 100) {
+    if (alturaScrollY < 350) {
       header.classList.remove('on')
     } else {
       header.classList.add('on')

@@ -1,6 +1,7 @@
 #services {
     background: var(--black-700);
     position: relative;
+    overflow: hidden;
   }
   
   #services span {
